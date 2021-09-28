@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Nembak pacar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hai cantik</h1>
+
+      <img src="https://media.giphy.com/media/L5f4Z5JoOKARG/giphy.gif" alt="" />
+      <h2>
+        Mau gak jadi pacarku
+        <button id="btn_musik" onclick="music()">play/pause</button>
+      </h2>
+      <button id="btn_mau" onclick='alert("I <3 U")'>Mau</button>
+      <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">gamau</button>
+      <audio id="bgMusic" src="https://voca.ro/11XT2gJ1qOJR" loop></audio>
+    </div>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var i = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+    var audioPlaying = false;
+    function music() {
+      var audio = document;
+      getElementById("bgMusic");
+      if (laudioPlaying) Audio.play();
+      else Audio.pause();
+      audioPlaying = laudioPlaying;
+    }
+  </script>
+</html>
